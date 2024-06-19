@@ -5,7 +5,7 @@ app = Flask(__name__)
 # Lista para armazenar os contatos
 contatos = []
 
-@app.rout('/')
+@app.route('/')
 def index():
     return render_template('index.html', contatos=contatos)
 
